@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\lcd_4bit_main.o"
+".\objects\lcd_4bit.o"
+--strict --scatter ".\Objects\Lcd_4bit_with_Files.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Lcd_4bit_with_Files.map" -o .\Objects\Lcd_4bit_with_Files.axf
